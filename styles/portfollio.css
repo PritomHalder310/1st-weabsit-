@@ -180,9 +180,6 @@ footer input[type='text'] , footer input[type="email"] ,footer textarea { font-s
 }
 
 /* responsive media query */
-.hide{
-    display: none;
-}
 
 @media screen and (max-width:576px) {
     .skills-container, footer, .about-items, .banner, nav, nav > ul  {display: flex;
@@ -224,7 +221,15 @@ footer input[type='text'] , footer input[type="email"] ,footer textarea { font-s
     width: 100%;
     
   }
+  .banner-content{
+    width: 100%;
+  }
 
 }
 
+@media screen and (min-width:576px) and (max-width:990px) {
+    .banner{
+        flex-direction: column;
+    }
+}
 
