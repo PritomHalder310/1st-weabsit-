@@ -1,0 +1,209 @@
+body{
+  color: rgb(74, 166, 202);
+}
+
+.epunda-slab-normal {
+  font-family: "Epunda Slab", serif;
+  font-optical-sizing: auto;
+font-style: normal;}
+/* shared stule */
+
+.secondery-bg{
+    background-color: antiquewhite;
+}
+.dark-2{color: rgb(180, 111, 65);}
+
+.btn-primary{background-color: rgba(236, 130, 30, 0.925);
+    font-weight: bold;
+     color: white;
+      padding: 18px 35px;
+       border-radius: 5px; 
+       font-size: 20px;
+       border: none;
+}
+
+.secton-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(45, 46, 39);
+}
+.section-description{
+    font-size: 18px;
+    color: rgb(126, 116, 116);
+}
+/*header*/
+.header{
+    background-image: url('../img/back.jpg') ,url('../img/rainbow_cloud_v2_600x.webp') ;
+    background-repeat:no-repeat;
+    background-position: top left, bottom right;
+}
+
+nav{ display: flex;
+       align-items: center;
+      justify-content: space-between;
+    margin: 30px 80px ; }
+
+.title {font-weight: 800;
+     font-size: 55px;}
+
+.name{color: tomato ;}
+
+nav ul li{list-style: none;
+         margin-left: 51px;
+         ;}
+
+nav li a{text-decoration: none; 
+    font-size: 20px;}
+ 
+nav ul{
+    display: flex;
+    align-items: center
+} 
+
+.banner{
+    display: flex;
+    justify-content: space-between ;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    width: 585px;
+}
+
+.banner-greetings{
+    font-size: 35px;
+    font-weight: 60px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 65px;
+}
+.Banner-profile-pic{
+    width: 580px;
+}
+
+/* main styles*/
+main{
+    max-width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+main section{
+     margin-top:130px ;
+     margin-bottom: 130px ;
+}
+
+/* about styles */
+
+.about{
+    border-radius: 0px;
+    padding: 100px 100px ;
+   
+}
+
+.about-items{
+      display: flex;
+      justify-content: space-around ;
+}
+
+.item-discription{
+    font-weight:600px ;
+    background-color: antiquewhite;
+    margin-top: auto;
+}
+/* skills section styles */
+.skills-container{
+    display: flex;
+    gap: 24px;
+    
+}
+.skill-description{
+    padding: 30px ;
+}
+.skil{
+     background-color: rgb(255, 255, 255);
+     box-shadow: 5px 2px 3px rgba(143, 140, 146, 0.726) ;
+     border-radius: 5px;
+     
+}
+.img{
+    height: 120px;
+    margin: 15px;
+    
+}
+/* resume section styles*/
+.resume-container{
+    display: flex;
+    gap: 24px;
+}
+
+.experience-title{
+    color: rgba(124, 111, 107, 0.87);
+}
+
+.experience-sub-title{
+    color: rgb(240, 199, 145);
+    font-size: 20px ;
+    font-weight: 600;
+    margin-bottom: 04px;
+}
+
+.experience-description{
+    color: rgba(143, 140, 146, 0.726);
+    margin-bottom: 04px;
+}
+.resume hr{
+   margin:  30px 5px ;
+}
+
+.resume-download-cv{
+    margin:50px;
+}
+/*fotter style*/
+footer{
+    padding: 130px 230px; 
+    display: flex;
+    gap: 150px;
+    
+}
+.footer-column{
+    width: 50%;
+}
+footer input[type='text'] , footer input[type="email"] ,footer textarea { font-size:larger;
+    height: 64px; width:90% ;
+    border-radius: 5px;
+    background-color: white ;
+    display: block;
+    padding: 10px 20px ;
+    margin-bottom: 24px ;
+    border: none;
+}
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-container, footer, .about-items  {display: flex;
+    flex-direction: column;
+    }
+   .resume-container{display: flex;
+    flex-direction: column;}
+  footer {
+    padding: 20px ; 
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .secondery-bg {
+    padding: 20px ;
+    margin-top: 10px;
+    margin-bottom: 05px;
+  }
+  .skills{
+    margin:10px ;
+  }
+}
+
+
